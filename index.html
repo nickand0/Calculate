@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <script src="tailwind.config.js"></script>
+    <script src="style.js"></script>
+</head>
+<body class="flex justify-center items-center">
+    <div class="container relative mt-10 w-3/4 h-3/4 md:w-[450px] bg-slate-10 shadow-3xl">
+        <div class=" etiquette text-[#ad7c7c] font-bold absolute top-[52px] left-[65px] bg-[#f3e8cb] px-4 text-[5px] md:text-[10px] md:top-[65px] md:left-[100px] md:px-7">@nick..ando</div>
+        <div id="affichage" class="overflow-x-auto whitespace-nowrap pl-5 pt-5 text-left text-[20px] bg-[#f3e8cb] shadow-4xl m-5 h-[70px] md:h-[90px] md:text-[40px]">
+           JE T'AIME ❤️
+        </div>
+        <div id="nombre" class="grid grid-cols-4 gap-2 md:gap-5 px-5" >
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="one">1</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="two">2</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="three">3</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="plus">+</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="four">4</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="five">5</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="six">6</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="minus">-</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="seven">7</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="eight">8</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="nine">9</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="multiplication">*</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="division">/</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="zero">0</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="virgule">.</button>
+            <button class="content w-14 h-14 bg-gradient-to-br from-[#ffffff] to-[e6e6e6] shadow-5xl font-bold active:text-blue-800 active:bg-[#3687ea] cursor-pointer md:w-20 md:h-20 md:text-2xl" id="egal">=</button>
+        </div>
+        <div class="flex justify-center py-5 cursor-pointer">
+            <button id="clear" class="cursor-pointer text-white bg-[#565656] shadow-5xl w-[270px] h-[40px] font-bold md:w-[402px] md:h-[60px] md:text-2xl">Clear All</button>
+        </div>
+    </div>
+    
+</body>
+</html>
